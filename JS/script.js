@@ -14,7 +14,7 @@ function cifraDeCesar(){
 	if(!isNaN(c) && c <= 26){
 		for (i = 0; i < a.length; i++){
 	    for (j = 0; j < v.length; j++){
-		if (a[i] == v[j] && v[j] != ' '){
+		if (a[i].toLowerCase() == v[j] && v[j] != ' '){
 			u += v[j+c]
 			break
 		}
@@ -43,7 +43,7 @@ function DescifraDeCesar(){
 	if(!isNaN(c) && c <= 26){
 		for (i = 0; i < a.length; i++){
 	    for (j = v.length; j > 0; j--){
-		if (a[i] == v[j] && v[j] != ' '){
+		if (a[i].toLowerCase() == v[j] && v[j] != ' '){
 			u += v[j-c]
 			break
 		}
